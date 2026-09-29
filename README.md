@@ -70,50 +70,50 @@
 ## 🚀 快速开始
 ```
 1. 克隆项目
-bash
+```bash
 
 git clone https://github.com/suzuzu410/ai-english-tutor.git
 cd ai-english-tutor
 ```
 ## 2. 启动后端
-bash
+```bash
 
 cd backend
-
+```
 # 创建并激活虚拟环境
-python -m venv .venv
+```python -m venv .venv
 .venv\Scripts\activate  # Windows
 source .venv/bin/activate  # Mac/Linux
-
+```
 # 安装依赖
-pip install -r requirements.txt
-
+```pip install -r requirements.txt
+```
 # 配置环境变量
-复制 .env.example 为 .env，并填入你的 DeepSeek API Key：
+```复制 .env.example 为 .env，并填入你的 DeepSeek API Key：
 LLM_MODEL_ID=deepseek-flash
 LLM_API_KEY=sk-你的密钥
 LLM_BASE_URL=https://api.deepseek.com
-
+```
 # 启动服务
-python -m uvicorn main:app --reload
+```python -m uvicorn main:app --reload
 
     后端运行在 http://127.0.0.1:8000。首次启动会自动下载向量化模型（约 100MB）。
-
+```
 # 3. 启动前端
-bash
+```bash
 
 cd ../frontend
-
+```
 # 安装依赖
-npm install
-
+```npm install
+```
 # 启动开发服务器
-npm run dev
+```npm run dev
 
     前端运行在 http://localhost:5173。打开浏览器即可开始对话。
-
+```
 # 📂 项目结构
-text
+```text
 
 ai-english-tutor/
 ├── backend/                 # Python FastAPI 后端
@@ -136,3 +136,4 @@ ai-english-tutor/
 POST	/api/chat	流式对话（含工具调用）	{"user_id": "student_01", "message": "Hello"}
 POST	/api/upload	上传 PDF/TXT 文档	multipart/form-data (key: file)
 GET	/health	健康检查	-
+```
