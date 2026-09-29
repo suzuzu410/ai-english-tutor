@@ -69,15 +69,13 @@
 
 ## 🚀 快速开始
 1. 克隆项目
-```
-bash
+```bash
 
 git clone https://github.com/suzuzu410/ai-english-tutor.git
 cd ai-english-tutor
 ```
 2. 启动后端
-```
-bash
+```bash
 
 cd backend
 ```
@@ -105,8 +103,7 @@ python -m uvicorn main:app --reload
 后端运行在 http://127.0.0.1:8000。首次启动会自动下载向量化模型（约 100MB）。
 ```
 # 启动前端
-```
-bash
+```bash
 
 cd ../frontend
 ```
