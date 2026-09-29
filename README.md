@@ -104,7 +104,7 @@ python -m uvicorn main:app --reload
 
 后端运行在 http://127.0.0.1:8000。首次启动会自动下载向量化模型（约 100MB）。
 ```
-# 3. 启动前端
+# 启动前端
 ```
 bash
 
