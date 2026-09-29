@@ -68,13 +68,13 @@
 ```
 
 ## 🚀 快速开始
-1. 克隆项目
+克隆项目
 ```bash
 
 git clone https://github.com/suzuzu410/ai-english-tutor.git
 cd ai-english-tutor
 ```
-2. 启动后端
+启动后端
 ```bash
 
 cd backend
