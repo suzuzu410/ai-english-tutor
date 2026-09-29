@@ -83,16 +83,16 @@ cd backend
 # 创建并激活虚拟环境
 python -m venv .venv
 .venv\Scripts\activate  # Windows
-# source .venv/bin/activate  # Mac/Linux
+source .venv/bin/activate  # Mac/Linux
 
 # 安装依赖
 pip install -r requirements.txt
 
 # 配置环境变量
-# 复制 .env.example 为 .env，并填入你的 DeepSeek API Key：
-# LLM_MODEL_ID=deepseek-flash
-# LLM_API_KEY=sk-你的密钥
-# LLM_BASE_URL=https://api.deepseek.com
+复制 .env.example 为 .env，并填入你的 DeepSeek API Key：
+LLM_MODEL_ID=deepseek-flash
+LLM_API_KEY=sk-你的密钥
+LLM_BASE_URL=https://api.deepseek.com
 
 # 启动服务
 python -m uvicorn main:app --reload
