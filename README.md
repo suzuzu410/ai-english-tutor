@@ -25,6 +25,21 @@
   - *前端支持工具调用状态实时提示（自定义 `[STATUS]` SSE 事件）。*
 - **⚡ 流式输出与极致 UX**：前后端基于 SSE 实现打字机效果，前端利用占位符与无痕替换技术，完美解决大模型首字延迟带来的体验问题。
 
+## 🛠️ 技术栈
+
+| 层级 | 技术 | 选型/版本 | 选择理由 |
+|---|---|---|---|
+| **前端** | Vue 3 + Vite | 3.x | 组合式 API 便于逻辑复用，Vite 启动极快 |
+| | TailwindCSS | 3.x | 原子化 CSS，快速构建响应式界面 |
+| | `@microsoft/fetch-event-source` | 2.x | 支持 POST 请求的 SSE 流式解析 |
+| **后端** | Python + FastAPI | 3.10+ | 异步性能优异，自动生成 Swagger 文档 |
+| | OpenAI SDK (兼容 DeepSeek) | 1.x | 标准的 Function Calling 接口 |
+| **AI / RAG** | LangChain | 0.3.x | 文档加载、切片、向量库集成 |
+| | ChromaDB | 0.5.x | 轻量级本地向量库，支持持久化 |
+| | HuggingFace Embeddings | `all-MiniLM-L6-v2` | 本地推理、零成本、英文语义理解佳 |
+| **数据库** | SQLite + SQLAlchemy | 2.x | 零配置存储对话历史与用户画像 |
+| **部署/工具** | Uvicorn, python-dotenv | - | ASGI 服务器与环境变量管理 |
+
 ## 🏗️ 系统架构
 
 ```text
