@@ -138,8 +138,4 @@ ai-english-tutor/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
-方法	路径	用途	请求体示例
-POST	/api/chat	流式对话（含工具调用）	{"user_id": "student_01", "message": "Hello"}
-POST	/api/upload	上传 PDF/TXT 文档	multipart/form-data (key: file)
-GET	/health	健康检查	-
 ```
