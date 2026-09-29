@@ -74,20 +74,15 @@
 git clone https://github.com/suzuzu410/ai-english-tutor.git
 cd ai-english-tutor
 ```
-启动后端
+## 启动后端
 ```bash
-
 cd backend
-```
-创建并激活虚拟环境
-```
+
 python -m venv .venv
 .venv\Scripts\activate  # Windows
-source .venv/bin/activate  # Mac/Linux
-```
-安装依赖
-```
-pip install -r requirements.txt
+source .venv/bin/activate  # Mac/Linux #创建并激活虚拟环境
+
+pip install -r requirements.txt #安装依赖
 ```
 # 配置环境变量
 ```
@@ -95,25 +90,17 @@ pip install -r requirements.txt
 LLM_MODEL_ID=deepseek-flash
 LLM_API_KEY=sk-你的密钥
 LLM_BASE_URL=https://api.deepseek.com
-```
-# 启动服务
-```
-python -m uvicorn main:app --reload
+
+python -m uvicorn main:app --reload # 启动服务
 
 后端运行在 http://127.0.0.1:8000。首次启动会自动下载向量化模型（约 100MB）。
 ```
 # 启动前端
 ```bash
-
 cd ../frontend
-```
-# 安装依赖
-```
-npm install
-```
-# 启动开发服务器
-```
-npm run dev
+
+npm install # 安装依赖
+npm run dev # 启动开发服务器
 
 前端运行在 http://localhost:5173。打开浏览器即可开始对话。
 ```
