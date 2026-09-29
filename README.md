@@ -54,24 +54,28 @@
    ↓
 [ 大语言模型 / 向量化模型 ] (DeepSeek API, HuggingFace Embeddings)
 
-🧰 环境要求
+```
 
-    Python 3.10+
+## 🧰 环境要求
+
+``` Python 3.10+
 
     Node.js 18+
 
     Git
 
     DeepSeek API Key（获取地址）
+```
 
-🚀 快速开始
+## 🚀 快速开始
+```
 1. 克隆项目
 bash
 
 git clone https://github.com/suzuzu410/ai-english-tutor.git
 cd ai-english-tutor
-
-2. 启动后端
+```
+## 2. 启动后端
 bash
 
 cd backend
@@ -95,7 +99,7 @@ python -m uvicorn main:app --reload
 
     后端运行在 http://127.0.0.1:8000。首次启动会自动下载向量化模型（约 100MB）。
 
-3. 启动前端
+# 3. 启动前端
 bash
 
 cd ../frontend
@@ -108,7 +112,7 @@ npm run dev
 
     前端运行在 http://localhost:5173。打开浏览器即可开始对话。
 
-📂 项目结构
+# 📂 项目结构
 text
 
 ai-english-tutor/
@@ -128,8 +132,6 @@ ai-english-tutor/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
-
-🔌 核心接口
 方法	路径	用途	请求体示例
 POST	/api/chat	流式对话（含工具调用）	{"user_id": "student_01", "message": "Hello"}
 POST	/api/upload	上传 PDF/TXT 文档	multipart/form-data (key: file)
